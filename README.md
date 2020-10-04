@@ -1,8 +1,8 @@
 # Wanderlust
 
-wan·der·lust
-/ˈwändərˌləst/
- Learn to pronounce
-noun
-noun: wanderlust
-a strong desire to travel.
+---
+* wan·der·lust
+* /ˈwändərˌləst/
+* noun
+* A strong desire to travel.
+---
