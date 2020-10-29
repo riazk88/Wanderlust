@@ -1,4 +1,5 @@
 # Wanderlust
+Travel Blog
 
 ---
 * wan·der·lust
