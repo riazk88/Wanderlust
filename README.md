@@ -10,4 +10,4 @@
 
 ## Check it out!
 
-![Alt text](../images/readmeSS.png?raw=true)
+![Alt text](/readmeSS.png?raw=true)
