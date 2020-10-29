@@ -9,13 +9,40 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    cursor: pointer;
 }
 
-body {
+/* body {
     width: 100%;
     height: 100vh;
     background-color: #eee;
     display: flex;
+} */
+
+nav {
+    background: white;
+    width: 100%;
+    overflow: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    float: right;
+}
+
+nav a {
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 10px;
+    color: darkgreen;
 }
 
 .container {
@@ -48,62 +75,42 @@ body {
     justify-content: center;
 }
 
-.gallery img::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .8);
-    opacity: 0;
-    transition: .5s;
-}
-
-.gallery img:hover::before {
-    opacity: 1.0;
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
 .img-1 {
     grid-area: img-1;
     min-height: 51.5rem;
-    background-image: url(egypt.jpg);
 }
 
 .img-2 {
     grid-area: img-2;
-    background-image: url(bangkok.jpg);
 }
 
 .img-3 {
     grid-area: img-3;
-    background-image: url(london.jpg);
 }
 
 .img-4 {
     grid-area: img-4;
-    background-image: url(istanbul.jpg);
 }
 
 .img-5 {
     grid-area: img-5;
-    background-image: url(japan.jpg);
 }
 
 .img-6 {
     grid-area: img-6;
     min-height: 51.5rem;
-    background-image: url(paris.jpg);
 }
 
 .img-7 {
     grid-area: img-7;
-    background-image: url(greece.jpg);
 }
 
 .img-8 {
     grid-area: img-8;
-    background-image: url(colombia.jpg);
 }
 
 @media screen and (max-width: 900px) {
@@ -123,5 +130,25 @@ body {
     }
     .img-6 {
         min-height: 20rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-areas: 
+        'img-1 img-1 img-1 img-1'
+        'img-2 img-2 img-2 img-2'
+        'img-3 img-3 img-3 img-3'
+        'img-4 img-4 img-4 img-4'
+        'img-5 img-5 img-5 img-5'
+        'img-6 img-6 img-6 img-6'
+        'img-7 img-7 img-7 img-7'
+        'img-8 img-8 img-8 img-8';
+    }
+    .gallery img,
+    .img-1,
+    .img-6 {
+        min-height: 30rem;
+        height: 30rem;
     }
 }
